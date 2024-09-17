@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar"
 const page = () => {
   return (
-    <div>
+    <div className="bg-white">
       <Navbar/>
     </div>
   )
