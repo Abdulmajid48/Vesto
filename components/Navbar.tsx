@@ -48,17 +48,25 @@ const Navbar = () => {
         </div>
         <a className="btn btn-ghost text-xl">
           {" "}
-          <Image src="/logo.svg" width={50} height={50} alt="" />
+          <Image
+            src="/logo.svg"
+            width={50}
+            height={50}
+            alt=""
+            className="hover:scale-125 ease-in-out"
+          />
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
+          <li className="hover:scale-110 ease-in-out">
             <a>Product</a>
           </li>
           <li>
             <details>
-              <summary>Customer</summary>
+              <summary className="hover:scale-110 ease-in-out">
+                Customer
+              </summary>
               <ul className="p-2">
                 <li>
                   <a>Submenu 1</a>
@@ -69,44 +77,45 @@ const Navbar = () => {
               </ul>
             </details>
           </li>
-          <li>
+          <li className="hover:scale-110 ease-in-out">
             <a>Blog</a>
           </li>
-          <li>
+          <li className="hover:scale-110 ease-in-out">
             <a>About</a>
           </li>
         </ul>
       </div>
-      <div className="navbar-end flex flex-row gap-4 text-sm sm:text-xs">
+      <div className="navbar-end flex flex-row gap-4 text-xs sm:text-xs">
         {/* <a className="btn">Button</a> */}
-        <button className="w-16 h-8 rounded-md bg-[#2E2E1F1F] text-[#2E2E27]">
+        <button className="w-16 h-8 rounded-md bg-[#2E2E1F1F] text-[#2E2E27] hover:scale-110 ease-in-out">
           Sign in
         </button>
-        <button className="h-8 w-36 bg-[#0B3721] text-[#FFFFFF] rounded-md">
+        <button className="max-[400px]:hidden h-8 w-36 bg-[#0B3721] text-[#FFFFFF] rounded-md hover:scale-110 ease-in-out">
           {" "}
           Schedule a Demo
         </button>
       </div>
     </div>
-    // <div className="flex flex-row justify-between items-center mx-4 my-3">
-    //   <div>
-    //     <Image src="/logo.svg" width={50} height={50} alt="" />
-    //   </div>
-    //   <div className="text-[#2E2E27] text-sm flex flex-row justify-between items-center gap-4">
-    //     <button>Product</button>
-    //     <button>Customer</button>
-    //     <button>Blog</button>
-    //     <button>About</button>
-    //   </div>
-    //   <div className=" flex flex-row justify-between items-center gap-5 text-sm">
-    //     <button className="w-16 h-8 rounded-md bg-[#2E2E1F1F] text-[#2E2E27]">
-    //       Sign in
-    //     </button>
-    //     <button className="h-8 w-36 bg-[#0B3721] text-[#FFFFFF] rounded-md">
-    //       Schedule a Demo
-    //     </button>
-    //   </div>
-    // </div>
   );
 };
 export default Navbar;
+
+// <div className="flex flex-row justify-between items-center mx-4 my-3">
+//   <div>
+//     <Image src="/logo.svg" width={50} height={50} alt="" />
+//   </div>
+//   <div className="text-[#2E2E27] text-sm flex flex-row justify-between items-center gap-4">
+//     <button>Product</button>
+//     <button>Customer</button>
+//     <button>Blog</button>
+//     <button>About</button>
+//   </div>
+//   <div className=" flex flex-row justify-between items-center gap-5 text-sm">
+//     <button className="w-16 h-8 rounded-md bg-[#2E2E1F1F] text-[#2E2E27]">
+//       Sign in
+//     </button>
+//     <button className="h-8 w-36 bg-[#0B3721] text-[#FFFFFF] rounded-md">
+//       Schedule a Demo
+//     </button>
+//   </div>
+// </div>
