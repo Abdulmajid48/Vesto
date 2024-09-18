@@ -25,7 +25,7 @@ export default Cash;
 export const TotalCash = () => {
   return (
     <div className="flex flex-col sm:flex-row justify-between sm:pr-5 my-3">
-      <div className="ml-5">
+      <div className="max-[400px]:hidden">
         <span className="text=[#74746A]">Total Cash and Money for</span> last
         Week
       </div>
