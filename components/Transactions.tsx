@@ -1,52 +1,153 @@
-import { DollarSign } from "lucide-react";
-import { Component } from "./Chartcomponent";
-import { CardContent, CardHeader, CardTitle } from "./ui/card";
+import Link from "next/link";
+import { ArrowUpRight} from "lucide-react";
 
-const Transactions = () => {
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+
+export const description =
+  "An application shell with a header and main content area.";
+
+export function Dashboard() {
   return (
-    <div className="flex flex-col sm:flex-row ">
-      <div className="flex flex-col sm:flex-row justify-center sm:justify-start sm:items-center text-center align-middle sm:w-1/2">
-        <div className="">
-          <CardHeader className="flex flex-row items-center justify-center gap-0 sm:justify-between space-y-0 pb-2">
-            <CardTitle className="text-xs font-medium text-[#74746A]">
-              Total Balance (USD)
-            </CardTitle>
-            <DollarSign className="h-4 mx-0 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-lg font-bold text-[#2E2E27]">
-              $10,587,900.<span className="text-sm">13</span>
-            </div>
-            <p className="text-xs text-muted-foreground">
-              +20.1% from last month
-            </p>
-          </CardContent>
-        </div>
-        <div className="sm:w-[35%]">
-          <Component />
-        </div>
-        <div className="sm:m-0 text-[#2E2E27] text-xs">
-          <ul className="flex flex-col gap-1">
-            <li className="flex flex-row justify-start items-center gap-1">
-              <div className="h-3 w-3 bg-[#0f766e] rounded-full"></div>Acme
-              Canada
-            </li>
-            <li className="flex flex-row justify-start items-center gap-1">
-              <div className="h-3 w-3 bg-[#f97316] rounded-full"></div>Acme US,
-              Inc{" "}
-            </li>
-            <li className="flex flex-row justify-start items-center gap-1">
-              <div className="h-3 w-3 bg-[#111827] rounded-full"></div>Acme
-              Mexico, SA
-            </li>
-            <li className="flex flex-row justify-start items-center gap-1">
-              <div className="h-3 w-3 bg-[#eab308] rounded-full"></div>Acme
-              Italia S.p.A
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div className="flex flex-col min-h-screen w-[85%] sm:w-[95%] m-auto mt-6">
+      <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">
+        <CardHeader className="flex flex-row items-center">
+          <div className="grid gap-2">
+            <CardTitle>Transactions</CardTitle>
+            <CardDescription>
+              Recent transactions from your store.
+            </CardDescription>
+          </div>
+          <Button asChild size="sm" className="ml-auto gap-1">
+            <Link href="#">
+              View All
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
+          </Button>
+        </CardHeader>
+        <CardContent>
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>Customer</TableHead>
+                <TableHead className="hidden xl:table-column">Type</TableHead>
+                <TableHead className="hidden xl:table-column">Status</TableHead>
+                <TableHead className="hidden xl:table-column">Date</TableHead>
+                <TableHead className="text-right">Amount</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableCell>
+                  <div className="font-medium">Liam Johnson</div>
+                  <div className="hidden text-sm text-muted-foreground md:inline">
+                    liam@example.com
+                  </div>
+                </TableCell>
+                <TableCell className="hidden xl:table-column">Sale</TableCell>
+                <TableCell className="hidden xl:table-column">
+                  <Badge className="text-xs" variant="outline">
+                    Approved
+                  </Badge>
+                </TableCell>
+                <TableCell className="hidden md:table-cell lg:hidden xl:table-column">
+                  2023-06-23
+                </TableCell>
+                <TableCell className="text-right">$250.00</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <div className="font-medium">Olivia Smith</div>
+                  <div className="hidden text-sm text-muted-foreground md:inline">
+                    olivia@example.com
+                  </div>
+                </TableCell>
+                <TableCell className="hidden xl:table-column">Refund</TableCell>
+                <TableCell className="hidden xl:table-column">
+                  <Badge className="text-xs" variant="outline">
+                    Declined
+                  </Badge>
+                </TableCell>
+                <TableCell className="hidden md:table-cell lg:hidden xl:table-column">
+                  2023-06-24
+                </TableCell>
+                <TableCell className="text-right">$150.00</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <div className="font-medium">Noah Williams</div>
+                  <div className="hidden text-sm text-muted-foreground md:inline">
+                    noah@example.com
+                  </div>
+                </TableCell>
+                <TableCell className="hidden xl:table-column">
+                  Subscription
+                </TableCell>
+                <TableCell className="hidden xl:table-column">
+                  <Badge className="text-xs" variant="outline">
+                    Approved
+                  </Badge>
+                </TableCell>
+                <TableCell className="hidden md:table-cell lg:hidden xl:table-column">
+                  2023-06-25
+                </TableCell>
+                <TableCell className="text-right">$350.00</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <div className="font-medium">Emma Brown</div>
+                  <div className="hidden text-sm text-muted-foreground md:inline">
+                    emma@example.com
+                  </div>
+                </TableCell>
+                <TableCell className="hidden xl:table-column">Sale</TableCell>
+                <TableCell className="hidden xl:table-column">
+                  <Badge className="text-xs" variant="outline">
+                    Approved
+                  </Badge>
+                </TableCell>
+                <TableCell className="hidden md:table-cell lg:hidden xl:table-column">
+                  2023-06-26
+                </TableCell>
+                <TableCell className="text-right">$450.00</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>
+                  <div className="font-medium">Liam Johnson</div>
+                  <div className="hidden text-sm text-muted-foreground md:inline">
+                    liam@example.com
+                  </div>
+                </TableCell>
+                <TableCell className="hidden xl:table-column">Sale</TableCell>
+                <TableCell className="hidden xl:table-column">
+                  <Badge className="text-xs" variant="outline">
+                    Approved
+                  </Badge>
+                </TableCell>
+                <TableCell className="hidden md:table-cell lg:hidden xl:table-column">
+                  2023-06-27
+                </TableCell>
+                <TableCell className="text-right">$550.00</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </CardContent>
+      </Card>
     </div>
   );
-};
-export default Transactions;
+}
