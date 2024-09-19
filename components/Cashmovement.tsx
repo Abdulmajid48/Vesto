@@ -1,8 +1,9 @@
+import Linecharts from "./Linecharts";
 import Totalbalanceandcashmovement from "./Totalbalanceandcashmovement";
 
 const Cashmovement = () => {
   return (
-    <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center text-center align-middle sm:w-1/2 border-[0.7px] border-solid border-[#2E2E1F1F] sm:m-0 p-2 rounded-md sm:pr-36">
+    <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center text-center align-middle sm:w-1/2 border-[0.7px] border-solid border-[#2E2E1F1F] sm:m-0 p-2 rounded-md sm:pr-10">
       <div className="">
         <Totalbalanceandcashmovement
           title="Cash Movement"
@@ -14,6 +15,9 @@ const Cashmovement = () => {
           percentage="2.5%"
           previous="$102,917"
         />
+      </div>
+      <div className="w-[85%] sm:w-[45%]">
+        <Linecharts/>
       </div>
       <div className="flex flex-col gap-2 text-center sm:text-left">
         <p className="text-[#74746A] text-xs">Opening Balance</p>

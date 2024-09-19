@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import { Dashboard } from "@/components/Transactions";
 import Cash from "@/components/Cash";
 import Sponsors from "@/components/Sponsors";
+import Treasury from "@/components/Treasury";
 
 const page = () => {
   return (
@@ -12,6 +13,7 @@ const page = () => {
     <Cash/>
       <Dashboard />
       <Sponsors/>
+      <Treasury/>
     </div>
   );
 };

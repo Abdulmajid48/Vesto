@@ -24,7 +24,7 @@ export const description =
 
 export function Dashboard() {
   return (
-    <div className="flex flex-col w-[85%] sm:w-[95%] m-auto mt-6 mb-10">
+    <div className="flex flex-col w-[85%] sm:w-[95%] m-auto mt-6">
       <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">
         <CardHeader className="flex flex-row items-center">
           <div className="grid gap-2">

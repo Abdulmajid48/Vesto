@@ -1,4 +1,4 @@
-import { Component } from "./Chartcomponent";
+import Chartcomponent, { Chartlist } from "./Chartcomponent";
 import Totalbalanceandcashmovement from "./Totalbalanceandcashmovement";
 
 const Totalbalance = () => {
@@ -17,30 +17,11 @@ const Totalbalance = () => {
         />
       </div>
 
-      <div className="w-[85%] sm:w-[35%]">
-        <Component />
+      <div className="w-[85%] sm:w-[40%]">
+        <Chartcomponent />
       </div>
-      <div className="sm:m-0 text-[#2E2E27] text-xs">
-        <ul className="flex flex-col gap-1 sm:gap-4">
-          <li className="flex flex-row justify-start items-center gap-1">
-            <div className="h-3 w-3 bg-[#0f766e] rounded-full"></div>
-            <p>Acme Canada</p>
-          </li>
-          <li className="flex flex-row justify-start items-center gap-1">
-            <div className="h-3 w-3 bg-[#f97316] rounded-full"></div>
-            <p>Acme US, Inc</p>
-          </li>
-          <li className="flex flex-row justify-start items-center gap-1">
-            <div className="h-3 w-3 bg-[#111827] rounded-full"></div>
-            <p>Acme Mexico, SA</p>
-          </li>
-          <li className="flex flex-row justify-start items-center gap-1">
-            <div className="h-3 w-3 bg-[#eab308] rounded-full"></div>
-            <p>Acme Italia S.p.A</p>
-          </li>
-        </ul>
-      </div>
+      <Chartlist/>
     </div>
   );
-}
-export default Totalbalance
+};
+export default Totalbalance;
