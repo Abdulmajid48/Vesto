@@ -5,11 +5,12 @@ import Cash from "@/components/Cash";
 import Sponsors from "@/components/Sponsors";
 import Treasury from "@/components/Treasury";
 import Founder from "@/components/Founder";
-import Whyparty from "@/components/Whyvesto";
+import Whyparty from "@/components/Whyparty";
+import Safety from "@/components/Safety";
 
 const page = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-hidden">
       <Navbar />
       <Headersection />
       <Cash />
@@ -18,6 +19,7 @@ const page = () => {
       <Treasury />
       <Founder />
       <Whyparty />
+      <Safety/>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import {
   FlagTriangleRight,
   Globe,
   Link,
+  MoveRight,
   Timer,
   TrendingUp,
   Worm,
@@ -84,13 +85,13 @@ const Whyvesto = () => {
 
 const Multiparty = () => {
   return (
-    <div className="font-['SF_Pro_Text'] text-[#2E2E27] ml-6 sm:ml-10">
-      <ol className="text-xl sm:text-3xl">
+    <div className="font-['SF_Pro_Text'] text-[#2E2E27] ml-6 sm:ml-10 mb-5">
+      <ol className="text-xl sm:text-3xl mb-5">
         <li>1. Multi-bank cash visibility</li>
         <li>2. Yield on your idle cash</li>
       </ol>
-      <div>
-        <div className="bg-[#2E2E1F0D] flex flex-col gap-2">
+      <div className="flex flex-col sm:flex-row gap-3 sm:pr-20 justify-center items-center mr-7 sm:mr-0">
+        <div className="bg-[#2E2E1F0D] flex flex-col gap-5 p-2 pl-7 pt-5 pb-5 rounded-md">
           <div className="h-8 w-24 gap-2 px-2 rounded-3xl flex flex-row justify-center items-center bg-[#2E2E1F1F]">
             <Globe size={16} strokeWidth={1.5} />
             <p className="text-sm">Positioning</p>
@@ -100,18 +101,27 @@ const Multiparty = () => {
             Skip the login nightmare for all your different accounts, instead,
             see everything from one login.
           </p>
-          <div className="w-10">
-            <button className=" h-2">Accent</button>
+          <div>
+            <button className="h-10 w-24 rounded-md bg-[#0B3721] text-[#FFFFFF] text-xs flex flex-row items-center justify-center gap-2 hover:scale-x-110">
+              <p>Learn More </p> <MoveRight size={16} strokeWidth={0.5} />
+            </button>
           </div>
         </div>
-        <div className="bg-[#2E2E1F0D] flex flex-col gap-2">
-          <div className="h-8 w-24 gap-2 px-2 rounded-3xl flex flex-row justify-center items-center bg-[#2E2E1F1F]">
+        <div className="bg-[#F2F1E8] flex flex-col gap-5 p-2 pl-7 pt-5 pb-5 rounded-md">
+          <div className="h-8 w-24 gap-2 px-2 rounded-3xl flex flex-row justify-center items-center bg-[#2E2E1F1F] text-xs">
             <TrendingUp size={16} strokeWidth={1.5} />
             <p className="text-sm">Yield</p>
           </div>
-          <p></p>
-          <p></p>
-          <div></div>
+          <p>Idle cash management</p>
+          <p>
+            Earn yield on your reserve cash with Treasuries, MMFs, and cash
+            sweeps to help you make the most of every dollar.
+          </p>
+          <div>
+            <button className=" h-10 w-24 rounded-md bg-[#0B3721] text-[#FFFFFF] text-xs flex flex-row items-center justify-center gap-2 hover:scale-110">
+              <p>Learn More </p> <MoveRight size={16} strokeWidth={0.5} />
+            </button>
+          </div>
         </div>
       </div>
     </div>
