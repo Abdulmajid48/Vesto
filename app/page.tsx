@@ -9,6 +9,8 @@ import Whyparty from "@/components/Whyparty";
 import Safety from "@/components/Safety";
 import Wanttoknow from "@/components/Wanttoknow";
 import Ceo from "@/components/Ceo";
+import Casestudies from "@/components/Casestudies";
+import Centralize from "@/components/Centralize";
 
 const page = () => {
   return (
@@ -21,9 +23,11 @@ const page = () => {
       <Treasury />
       <Founder />
       <Whyparty />
-      <Safety/>
-      <Wanttoknow/>
-      <Ceo/>
+      <Safety />
+      <Wanttoknow />
+      <Ceo />
+      <Casestudies />
+      <Centralize/>
     </div>
   );
 };
