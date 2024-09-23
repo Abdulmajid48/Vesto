@@ -8,6 +8,7 @@ import Founder from "@/components/Founder";
 import Whyparty from "@/components/Whyparty";
 import Safety from "@/components/Safety";
 import Wanttoknow from "@/components/Wanttoknow";
+import Ceo from "@/components/Ceo";
 
 const page = () => {
   return (
@@ -22,6 +23,7 @@ const page = () => {
       <Whyparty />
       <Safety/>
       <Wanttoknow/>
+      <Ceo/>
     </div>
   );
 };

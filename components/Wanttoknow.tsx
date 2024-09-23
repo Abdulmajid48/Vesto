@@ -13,9 +13,9 @@ const Wanttoknow = () => {
           </div>
         </div>
 
-        <div className="bg-[#0B3721] w-11/12 sm:w-2/3 rounded-md mb-5 h-auto flex flex-col gap-6 px-2 sm:px-6 pt-4 pb-10 text-white">
+        <div className="bg-[#0B3721] w-11/12 sm:w-[60%] rounded-md mb-5 h-auto sm:h-56 flex flex-col gap-6 px-2 sm:px-6 pt-4 pb-10 text-white">
           <p className="pl-3 sm:p-0 text-lg">Company cash balance</p>
-          <p className="pl-3 sm:p-0">$0.00</p>
+          <p className="pl-3 sm:p-0 border-b-[0.5px] border-b-neutral-500">$0.00</p>
           <div className="flex flex-row gap-4 sm:w-full w-11/12 m-auto sm:m-0">
             <input
               type="email"

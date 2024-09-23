@@ -18,7 +18,7 @@ const Safety = () => {
             Purpose-built to maximize the security of your assets.
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row sm:gap-10 sm:mr-10 sm:ml-10 w-11/12 m-auto mt-4">
+        <div className="flex flex-col sm:flex-row justify-center items-center sm:gap-10 sm:mr-10 sm:ml-10 w-11/12 m-auto mt-4">
           {Safetycontents.map((content, index) => {
             const { image, heading, paragraph }: Content = content;
             return (
