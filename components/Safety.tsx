@@ -22,9 +22,8 @@ const Safety = () => {
           {Safetycontents.map((content, index) => {
             const { image, heading, paragraph }: Content = content;
             return (
-              <div className="flex flex-col">
+              <div className="flex flex-col" key={index}>
                 <Image
-                key={index}
                   src={image}
                   alt="audit picture"
                   height={350}

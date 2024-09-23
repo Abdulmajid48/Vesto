@@ -12,10 +12,10 @@ const Treasury = () => {
       <div className="flex sm:flex-row flex-col sm:gap-5">
         <div className="flex flex-col sm:w-[35%]">
           <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3">
-            <div className="w-[80%] sm:w-[55%] m-auto sm:m-0">
+            <div className="w-[85%] sm:w-[95%] lg:w-[65%] m-auto sm:m-0">
               <Chartcomponent />
             </div>
-            <div className="m-auto sm:m-0">
+            <div className="m-auto sm:m-0 max-[640px]:block max-[1180px]:hidden text-center align-middle">
               <Chartlist />
             </div>
           </div>

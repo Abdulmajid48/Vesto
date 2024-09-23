@@ -17,10 +17,12 @@ const Totalbalance = () => {
         />
       </div>
 
-      <div className="w-[85%] sm:w-[40%]">
+      <div className="w-[85%] sm:w-[95%] md:w-[95%] lg:w-[60%]">
         <Chartcomponent />
       </div>
-      <Chartlist/>
+      <div className="max-[640px]:block max-[2180px]:hidden">
+        <Chartlist />
+      </div>
     </div>
   );
 };

@@ -2,7 +2,7 @@
 
 import { Label, Pie, PieChart } from "recharts";
 
-import { CardContent} from "@/components/ui/card";
+import { CardContent } from "@/components/ui/card";
 import {
   ChartConfig,
   ChartContainer,
@@ -109,29 +109,48 @@ function Chartcomponent() {
 }
 
 const Chartlist = () => {
+  interface Content {
+    name: string;
+    color: string;
+  }
   return (
     <div className="sm:m-0 text-[#2E2E27] text-xs">
       <ul className="flex flex-col gap-1 sm:gap-4">
-        <li className="flex flex-row justify-start items-center gap-1">
-          <div className="h-3 w-3 bg-[#0f766e] rounded-full"></div>
-          <p>Acme Canada</p>
-        </li>
-        <li className="flex flex-row justify-start items-center gap-1">
-          <div className="h-3 w-3 bg-[#f97316] rounded-full"></div>
-          <p>Acme US, Inc</p>
-        </li>
-        <li className="flex flex-row justify-start items-center gap-1">
-          <div className="h-3 w-3 bg-[#111827] rounded-full"></div>
-          <p>Acme Mexico, SA</p>
-        </li>
-        <li className="flex flex-row justify-start items-center gap-1">
-          <div className="h-3 w-3 bg-[#eab308] rounded-full"></div>
-          <p>Acme Italia S.p.A</p>
-        </li>
+        {Chartlistcontent.map((content, index) => {
+          const { name, color }: Content = content;
+          return (
+            <li
+              className="flex flex-row justify-start items-center gap-1"
+              key={index}
+            >
+              <div className={`h-3 w-3 ${color} rounded-full`}></div>
+              <p>{name}</p>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
 };
+
+const Chartlistcontent = [
+  {
+    name: "Acme Canada",
+    color: "bg-[#0f766e]",
+  },
+  {
+    name: "Acme US, Inc",
+    color: "bg-[#f97316]",
+  },
+  {
+    name: "Acme Mexico, SA",
+    color: "bg-[#111827]",
+  },
+  {
+    name: "Acme Italia S.p.A",
+    color: "bg-[#eab308]",
+  },
+];
 
 export default Chartcomponent;
 export { Chartlist };
