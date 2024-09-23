@@ -9,7 +9,7 @@ interface Content {
 const Safety = () => {
   return (
     <>
-      <div className="bg-[#F9F8F1] font-['SF_Pro_Text'] text-[#2E2E27] pt-7">
+      <div className="bg-[#F9F8F1] font-['SF_Pro_Text'] text-[#2E2E27] pt-7 mb-5 h-[79.5rem] sm:h-[520px]">
         <div>
           <h2 className="text-center text-2xl sm:text-3xl">
             Safety and security
@@ -18,20 +18,21 @@ const Safety = () => {
             Purpose-built to maximize the security of your assets.
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row sm:gap-10 sm:mr-10 sm:ml-10 w-11/12 m-auto">
+        <div className="flex flex-col sm:flex-row sm:gap-10 sm:mr-10 sm:ml-10 w-11/12 m-auto mt-4">
           {Safetycontents.map((content, index) => {
             const { image, heading, paragraph }: Content = content;
             return (
               <div className="flex flex-col">
                 <Image
+                key={index}
                   src={image}
                   alt="audit picture"
                   height={350}
                   width={350}
                 />
-                <div className="text-left bg-white w-[350px] h-[120px]">
-                  <h2>{heading}</h2>
-                  <p>{paragraph}</p>
+                <div className="text-left bg-white w-[350px] h-[150px] p-7">
+                  <h2 className="pb-2 text-lg">{heading}</h2>
+                  <p className="text-sm">{paragraph}</p>
                 </div>
               </div>
             );

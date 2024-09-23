@@ -7,6 +7,7 @@ import Treasury from "@/components/Treasury";
 import Founder from "@/components/Founder";
 import Whyparty from "@/components/Whyparty";
 import Safety from "@/components/Safety";
+import Wanttoknow from "@/components/Wanttoknow";
 
 const page = () => {
   return (
@@ -20,6 +21,7 @@ const page = () => {
       <Founder />
       <Whyparty />
       <Safety/>
+      <Wanttoknow/>
     </div>
   );
 };
