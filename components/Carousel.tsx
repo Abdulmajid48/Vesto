@@ -11,7 +11,16 @@ import {
 import Image from "next/image";
 
 const Carouselsection = () => {
-  const images = ["/ceo.svg", "/founder.svg", "/ceo.svg", "/founder.svg"];
+  const images = [
+    "/ceo.svg",
+    "/founder.svg",
+    "/ceo.svg",
+    "/founder.svg",
+    "/ceo.svg",
+    "/founder.svg",
+    "/ceo.svg",
+    "/founder.svg",
+  ];
 
   return (
     <Carousel

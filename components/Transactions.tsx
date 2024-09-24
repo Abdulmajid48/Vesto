@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight} from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -22,7 +22,7 @@ import {
 export const description =
   "An application shell with a header and main content area.";
 
-export function Dashboard() {
+const Transactions = () => {
   return (
     <div className="flex flex-col w-[85%] sm:w-[95%] m-auto mt-6">
       <Card className="xl:col-span-2" x-chunk="dashboard-01-chunk-4">
@@ -150,4 +150,6 @@ export function Dashboard() {
       </Card>
     </div>
   );
-}
+};
+
+export default Transactions;

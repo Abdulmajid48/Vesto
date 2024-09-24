@@ -3,7 +3,7 @@ import Totalbalance from "./Totalbalance";
 
 const Balanceboxes = () => {
   return (
-    <div className="flex flex-col sm:flex-row gap-7 px-5 ">
+    <div className="flex flex-col lg:flex-row gap-7 px-5 ">
       <Totalbalance/>
       <Cashmovement />
     </div>

@@ -9,7 +9,7 @@ interface Content {
 const Safety = () => {
   return (
     <>
-      <div className="bg-[#F9F8F1] font-['SF_Pro_Text'] text-[#2E2E27] pt-7 mb-5 h-[79.5rem] sm:h-[520px]">
+      <div className="bg-[#F9F8F1] font-['SF_Pro_Text'] text-[#2E2E27] pt-7 mb-5 h-[82.5rem] sm:h-[520px]">
         <div>
           <h2 className="text-center text-2xl sm:text-3xl">
             Safety and security

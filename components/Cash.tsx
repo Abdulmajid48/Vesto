@@ -3,7 +3,7 @@ import Balanceboxes from "./Balanceboxes";
 
 const Cash = () => {
   return (
-    <div className=" px-2">
+    <div className=" px-2 pt-5">
       <div className="flex flex-row justify-between items-center sm:px-5 px-5">
         <h1 className="text-[#2E2E27] text-xl sm:text-3xl">Cash Positioning</h1>
         <button className=" flex flex-row items-center justify-center rounded-md h-8 w-24 text-xs hover:scale-110 bg-[#3E7B52] text-[#FFFFFF] shadow-[#22220614] shadow-[0px_1.41px_4.22px_0px]">
