@@ -1,6 +1,6 @@
 
 # Overview
-[Vesto] (https://vestoweb.vercel.app) is single page project showcasing a comprehensive financial management platform designed for businesses. the platform allows you to connect and control all of your global business accounts from a single, intuitive dashboard.
+[Vesto](https://vestoweb.vercel.app) is single page project showcasing a comprehensive financial management platform designed for businesses. the platform allows you to connect and control all of your global business accounts from a single, intuitive dashboard.
 Key Feature: Automatically earn on your idle cash.
 ## Description
 Vestoweb provides a unified view of all your company's financial accounts. By centralizing your financial data, we empower businesses to make informed decisions and optimize their cash management.
@@ -22,7 +22,7 @@ Getting Started
 ```bash
 npm run dev
 ```
-Hosted on [Vesto] (https://vestoweb.vercel.app) to get started.
+Hosted on [Vesto](https://vestoweb.vercel.app) to get started.
 
 ## Author
 - [Hasnode](https://abdulmajid.hashnode.dev)
